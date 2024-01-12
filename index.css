@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=IBM+Plex+Mono:wght@200;300;400;500;600;700&family=IBM+Plex+Serif:wght@300;400;500;600;700&family=Lato:wght@300&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Inter:wght@200;300;400;500;600;700;800;900&family=Lato:wght@400;900&family=Noto+Serif+NP+Hmong&family=Nunito:wght@400;500;600;700;800;900;1000&family=Oswald:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,900;1,600&family=Quicksand:wght@400;500;600;700&family=Roboto:wght@300;400;500;700;900&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600&family=Ubuntu:ital,wght@1,700&family=Source+Sans+3:wght@200;300;400;500;600;700;800;900&family=Tomorrow:wght@200;300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    margin: 0;
+    height: 100vh;
+    padding: 0;
+    background: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'exo 2';
+}
+.card{
+    background: rgb(235, 235, 17);
+    width: 450px;
+    height: 400px;
+    position: relative;
+    border-radius: 30px;
+    padding: 10px 10px;
+    overflow: hidden;
+
+}
+.falling-cards{
+    display: flex;
+    width: 40%;
+    height: 60px;
+     background: #101010;;
+    padding: 0px 5px;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    color: #fbfbfb;
+    border-radius: 20px;
+
+
+}
+.one{
+    bottom:80px;
+    transition: 0.4s;
+    transform: rotate(5deg) translateY(-900%);
+    animation: fallOne 4s ease 0.5s 1 forwards;
+
+
+
+    
+}
+.two{
+    bottom:5px;
+    left: 30%;
+    transition: 0.4s;
+    animation: fall-two 4s ease 0.2s 1 forwards;
+    transform: translateY(-900%);
+
+}
+.three{
+    right: -50px;
+    bottom: 80px;
+    transition: 0.4s;
+    animation: fall-three 3.2s ease 1s 1 forwards;
+    transform: rotate(-100deg) translateX(-300%);
+
+}
+.four{
+    left: 35%;
+    bottom: 100px;
+    transition: 0.4s;
+    animation: fall-four 4s ease 2.1s 1 forwards;
+    transform: rotate(0deg) translateY(-900%);
+
+}
+.five{
+    bottom: 180px;
+    transition: 0.4s;
+    animation: fall-five 4s ease 3.6s 1 forwards;
+    transform: rotate(-13deg) translateY(-900%);
+
+}
+.six{
+    right: 0;
+    transition: 0.4s;
+    bottom: 210px;
+    animation: fall-six 4s ease 5s 1  forwards;
+    transform: rotate(3deg) translateY(-900%);
+}
+@keyframes fallOne {
+    0%{
+        transform:rotate(5deg) translateY(-900%);
+    }
+    40%{
+        transform:rotate(5deg) translateY(0%);
+    }
+    50%{
+        transform:rotate(5deg) translateY(-10px);
+    }
+    70%{
+        transform:rotate(5deg) translateY(-5px);
+    }
+    100%{
+        transform: rotate(5deg) translateY(0%);
+    }
+}
+@keyframes fall-two {
+    0%{
+        transform: translateY(-900%);
+    }
+    40%{
+        transform:translateY(0%);
+    }
+    50%{
+        transform:translateY(-10px);
+    }
+    70%{
+        transform:translateY(-5px);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+@keyframes fall-three{
+    0%{
+        transform: rotate(-100deg) translateX(300%);
+    }
+    40%{
+        transform:rotate(-100deg) translateY(0%);
+    }
+    50%{
+        transform:rotate(-100deg) translateX(10px);
+    }
+    70%{
+        transform:rotate(-100deg) translateX(5px);
+    }
+    100%{
+        transform: rotate(-100deg) translateX(0%);
+    }
+}
+@keyframes fall-four {
+    0%{
+        transform: rotate(0deg) translateY(-900%);
+    }
+    40%{
+        transform:rotate(27deg) translateY(0%);
+    }
+    50%{
+        transform:rotate(27deg) translateY(-10px);
+    }
+    70%{
+        transform:rotate(27deg) translateY(-5px);
+    }
+    100%{
+        transform: rotate(27deg) translateY(0%);
+    }
+}
+@keyframes fall-five {
+    0%{
+        transform: rotate(-13deg) translateY(-900%);
+    }
+    40%{
+        transform:rotate(-13deg) translateY(0%);
+    }
+    50%{
+        transform:rotate(-13deg) translateY(-10px);
+    }
+    70%{
+        transform:rotate(-13deg) translateY(-5px);
+    }
+    100%{
+        transform: rotate(-13deg) translateY(0%);
+    }
+}
+@keyframes fall-six {
+    0%{
+        transform: rotate(3deg) translateY(-900%);
+    }
+    40%{
+        transform:rotate(3deg) translateY(0%);
+    }
+    50%{
+        transform:rotate(3deg) translateY(-10px);
+    }
+    70%{
+        transform:rotate(3deg) translateY(-5px);
+    }
+    100%{
+        transform: rotate(3deg) translateY(0%);
+    }
+}
