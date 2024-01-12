@@ -73,7 +73,6 @@ body{
     transition: 0.4s;
     animation: fall-five 4s ease 3.6s 1 forwards;
     transform: rotate(-13deg) translateY(-900%);
-
 }
 .six{
     right: 0;
@@ -81,6 +80,26 @@ body{
     bottom: 210px;
     animation: fall-six 4s ease 5s 1  forwards;
     transform: rotate(3deg) translateY(-900%);
+}
+.sev{
+    left: 13%;
+    bottom: 260px;
+    transition: 0.4s;
+    /* animation: fall-sev 4s ease 3.6s 1 forwards; */
+    transform: rotate(7deg) translateY(0%);
+}
+.eight{
+    right: 8%;
+    bottom: 288px;
+    transition: 0.4s;
+    /* animation: fall-sev 4s ease 3.6s 1 forwards; */
+    transform: rotate(15.5deg) translateY(0%);
+}
+.nine{
+    bottom: 330px;
+    transition: 0.4s;
+    /* animation: fall-sev 4s ease 3.6s 1 forwards; */
+    transform: rotate(-1deg) translateY(0%);
 }
 @keyframes fallOne {
     0%{
